@@ -1,5 +1,5 @@
 
-# Vertigo
+![Vertigo](https://cloud.githubusercontent.com/assets/1794673/10267561/1b0eef2e-6a99-11e5-9770-71e13744166c.png)
 
 Blazing fast communication between Node.js processes
 
