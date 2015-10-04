@@ -1,28 +1,28 @@
 
 {
 
-    "name"        : "hermod",
+    "name"        : "vertigo",
     "description" : "Blazing fast communication between Node.js processes",
-    "main"        : "./lib/hermod",
-    "author"      : "Javier Garmon",
+    "main"        : "./lib/vertigo",
+    "author"      : "Javier Garmon at Inevio Inc",
     "version"     : "0.0.6",
 
     "repository" : {
 
         "type" : "git",
-        "url"  : "https://github.com/javiergarmon/hermod.git"
+        "url"  : "https://github.com/Inevio/vertigo.git"
 
     },
 
     "bugs" : {
-        "url" : "https://github.com/javiergarmon/hermod/issues"
+        "url" : "https://github.com/Inevio/vertigo/issues"
     },
 
     "licenses" : [
 
         {
             "type" : "MIT",
-            "url"  : "https://github.com/javiergarmon/hermod/raw/master/LICENSE"
+            "url"  : "https://github.com/Inevio/vertigo/raw/master/LICENSE"
         }
 
     ]

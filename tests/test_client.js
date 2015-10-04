@@ -1,9 +1,9 @@
 
 // Modules
-	var hermod = require('../lib/hermod');
+	var vertigo = require('../lib/vertigo');
 
 // Create client
-	var client = hermod.createClient( 8000, 8001, 8002, 8003 );
+	var client = vertigo.createClient( 8000, 8001, 8002, 8003 );
 
 // Listen petitions
 	

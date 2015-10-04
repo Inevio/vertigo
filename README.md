@@ -1,12 +1,12 @@
 
-# hermod
+# Vertigo
 
 Blazing fast communication between Node.js processes
 
-## How to install hermod
-You can install hermod using Node Package Manager (npm):
+## How to install Vertigo
+You can install Vertigo using Node Package Manager (npm):
 ```
-npm install hermod
+npm install vertigo
 ```
 
 ## Features
@@ -23,10 +23,10 @@ npm install hermod
 #### Server
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create server
-  var server = hermod.createServer( 8000 );
+  var server = vertigo.createServer( 8000 );
 
 // Listen petitions
   server.on( 'hello', function( name, callback ){
@@ -37,10 +37,10 @@ npm install hermod
 #### Client
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create client
-  var client = hermod.createClient( 8000 );
+  var client = vertigo.createClient( 8000 );
 
 // Make a petition
   client.request( 'hello', 'John', function( error, response ){
@@ -52,10 +52,10 @@ npm install hermod
 #### Server 1
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create server
-  var server = hermod.createServer( 8000 );
+  var server = vertigo.createServer( 8000 );
 
 // Listen petitions
   server.on( 'hello', function( name, callback ){
@@ -66,10 +66,10 @@ npm install hermod
 #### Server 2
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create server
-  var server = hermod.createServer( 8001 );
+  var server = vertigo.createServer( 8001 );
 
 // Listen petitions
   server.on( 'hello', function( name, callback ){
@@ -80,10 +80,10 @@ npm install hermod
 #### Client
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create client
-  var client = hermod.createClient( 8000, 8001 );
+  var client = vertigo.createClient( 8000, 8001 );
 
 // Make a petition
   client.request( 'hello', 'John', function( error, response ){
@@ -95,24 +95,24 @@ npm install hermod
 #### Server
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create server
-  var server = hermod.createServer( 8000 );
+  var server = vertigo.createServer( 8000 );
 
 // Listen petitions
   server.on( 'hello', function( name ){
-    console.log( 'I received a message from ' + name' );
+    console.log( 'I received a message from ' + name );
   });
 
 ```
 #### Client
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create client
-  var client = hermod.createClient( 8000 );
+  var client = vertigo.createClient( 8000 );
 
 // Make a petition
   client.send( 'hello', 'John' );
@@ -122,10 +122,10 @@ npm install hermod
 #### Server
 ```js
 // Modules
-  var hermod = require('hermod');
+  var vertigo = require('vertigo');
 
 // Create server
-  var server = hermod.createServer(
+  var server = vertigo.createServer(
 
     8000,
     null, // Host definition, use falsy values for autoconfiguration
@@ -135,15 +135,16 @@ npm install hermod
 
 // Listen petitions
   server.on( 'hello', function( name ){
-    console.log( 'I received a message from ' + name' );
+    console.log( 'I received a message from ' + name );
   });
 
 ```
 
-## Benchmarks
-You can see benchmark results in https://github.com/javiergarmon/hermod-benchmark
+## Migrating from vertigo
+You can use Vertigo safely, currently the API is the same in both libraries.
 
 ## Changelog
+* 0.0.6 ( 2015/10/04 ): Support multirequests. Improved message transmission. Renamed from Hermod to Vertigo.
 * 0.0.5 ( 2014/06/26 ): Limit connections for specific IPs. Support host definition in server.
 * 0.0.4 ( 2014/04/02 ): Optimized and `send()` method support.
 * 0.0.3 ( 2014/04/02 ): Optimized and better documentation.
