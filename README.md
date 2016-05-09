@@ -144,6 +144,7 @@ npm install vertigo
 You can use Vertigo safely, currently the API is the same in both libraries.
 
 ## Changelog
+* 0.0.7 ( 2016/05/09 ): Support TLS secure connections.
 * 0.0.6 ( 2015/10/04 ): Support multirequests. Improved message transmission. Renamed from Hermod to Vertigo.
 * 0.0.5 ( 2014/06/26 ): Limit connections for specific IPs. Support host definition in server.
 * 0.0.4 ( 2014/04/02 ): Optimized and `send()` method support.
@@ -152,7 +153,6 @@ You can use Vertigo safely, currently the API is the same in both libraries.
 * 0.0.1 ( 2014/03/20 ): First version.
 
 ## To Do List
-* Support encrypted communications
 * `shout()` client method
 * `close()` client method
 * Authentication support
