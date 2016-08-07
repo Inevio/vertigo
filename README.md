@@ -144,6 +144,10 @@ npm install vertigo
 You can use Vertigo safely, currently the API is the same in both libraries.
 
 ## Changelog
+* 0.0.12 ( 2016/08/07 ): Fixed bug with `close()` client method.
+* 0.0.11 ( 2016/07/21 ): Fixed little bug with reconnect delay.
+* 0.0.10 ( 2016/07/21 ): Support reconnect delay. Setted 100ms as default.
+* 0.0.9 ( 2016/07/21 ): Allow again create clients with ´opts´ object as param.
 * 0.0.8 ( 2016/07/21 ): Implemented `close()` client method.
 * 0.0.7 ( 2016/05/09 ): Support TLS secure connections.
 * 0.0.6 ( 2015/10/04 ): Support multirequests. Improved message transmission. Renamed from Hermod to Vertigo.
