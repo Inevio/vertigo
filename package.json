@@ -5,7 +5,7 @@
     "description" : "Blazing fast communication between Node.js processes",
     "main"        : "./lib/vertigo",
     "author"      : "Javier Garmon at Inevio Inc",
-    "version"     : "0.0.13",
+    "version"     : "0.0.14",
 
     "repository" : {
 
