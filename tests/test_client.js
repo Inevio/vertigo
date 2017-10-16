@@ -6,15 +6,15 @@
 	var client = vertigo.createClient( 8000, 8001, 8002, 8003 );
 
 // Listen petitions
-	
+
 	var counter = 0;
 	var resEnd  = 0;
 
 	setInterval( function(){
 
-		client.request( 'hello', 'John #'+(counter++), function( error, res ){
+		client.request( 'hello', 'John #'+(counter++), function( err, res ){
 			resEnd++;
-			//console.log( 'Server sais', res );
+			console.log( 'Server says', err, res );
 		});
 
 	}, 0 );

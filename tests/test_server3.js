@@ -8,7 +8,7 @@
 // Listen petitions
 	server.on( 'hello', function( name, callback ){
 
-		//console.log( name + ' sais hello!' );
+		//console.log( name + ' says hello!' );
 
 		callback( null, 'Hi ' + name + ', I am the server' );
 
