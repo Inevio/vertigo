@@ -144,6 +144,7 @@ npm install vertigo
 You can use Vertigo safely, currently the API is the same in both libraries.
 
 ## Changelog
+* 0.0.15 ( 2017/10/17 ): Removed unnecessary operation.
 * 0.0.14 ( 2017/10/16 ): `'ECONNRESET'` error is triggered on client when server connection is closed.
 * 0.0.13 ( 2016/08/07 ): Improved `close()` client method.
 * 0.0.12 ( 2016/08/07 ): Fixed bug with `close()` client method.
